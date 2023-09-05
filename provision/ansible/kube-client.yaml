@@ -21,17 +21,32 @@
         shell: /bin/bash
         password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
 
+    - name: Clona repositório com os arquivos do curso para a HOME do usuario gke-suporte
+      git:
+        repo: 'https://github.com/4linux/544.git'
+        dest: /home/gke-suporte/544
+
     - name: Adiciona o usuario eks-suporte
       user:
         name: eks-suporte
         shell: /bin/bash
         password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
 
+    - name: Clona repositório com os arquivos do curso para a HOME do usuario eks-suporte
+      git:
+        repo: 'https://github.com/4linux/544.git'
+        dest: /home/eks-suporte/544
+
     - name: Adiciona o usuario eks-projeto
       user:
         name: eks-projeto
         shell: /bin/bash
         password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
+
+    - name: Clona repositório com os arquivos do curso para a HOME do usuario eks-projeto
+      git:
+        repo: 'https://github.com/4linux/544.git'
+        dest: /home/eks-projeto/544
 
     - name: Adicionar usuarios ao grupo wheel
       lineinfile:
