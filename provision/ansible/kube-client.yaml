@@ -1,0 +1,55 @@
+---
+- hosts: all
+  vars:
+    sudoers:
+      - gke-suporte
+      - eks-suporte
+  become: yes
+  become_user: root
+  become_method: sudo
+  tasks:
+    - name: Garantindo /etc/hosts
+      lineinfile:
+        path: /etc/hosts
+        line: "{{ item }}"
+      with_items:
+        - 172.16.0.201 kube-client
+
+    - name: Adiciona o usuario gke-suporte
+      user:
+        name: gke-suporte
+        shell: /bin/bash
+        password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
+
+    - name: Adiciona o usuario eks-suporte
+      user:
+        name: eks-suporte
+        shell: /bin/bash
+        password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
+
+    - name: Adiciona o usuario eks-projeto
+      user:
+        name: eks-projeto
+        shell: /bin/bash
+        password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
+
+    - name: Adicionar usuarios ao grupo wheel
+      lineinfile:
+        path: /etc/sudoers
+        line: "{{ item }}"
+      with_items:
+        - 'gke-suporte ALL=(ALL) NOPASSWD: ALL'
+        - 'eks-suporte ALL=(ALL) NOPASSWD: ALL'
+        - 'eks-projeto ALL=(ALL) NOPASSWD: ALL'
+
+    - name: Configura o servidor SSH para permitir conexao por senha
+      ansible.builtin.replace:
+        path: /etc/ssh/sshd_config
+        regexp: 'PasswordAuthentication no'
+        replace: 'PasswordAuthentication yes'
+
+    - name: Reinicia o SSH
+      service:
+        name: sshd
+        daemon_reload: yes
+        state: restarted

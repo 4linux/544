@@ -1,0 +1,112 @@
+{
+    "products": [
+        {
+            "id": "OLJCESPC7Z",
+            "name": "Handbag",
+            "description": "Eric Javits Lil Cote D'Azur Canvas Tote Bag for Women - Foldable Summer Tote Bags with Zipper & Detachable Strap.",
+            "picture": "/static/img/products/handbag.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 165,
+                "nanos": 990000000
+            },
+            "categories": ["accessories"]
+        },
+        {
+            "id": "66VCHSJNUP",
+            "name": "Jacket",
+            "description": "FROGG TOGGS Men's Ii Guide Waterproof Rain Jacket, Compatible W Co-Pilot Puff Jacket & Vest Liners.",
+            "picture": "/static/img/products/jacket.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 119,
+                "nanos": 990000000
+            },
+            "categories": ["clothing", "tops"]
+        },
+        {
+            "id": "1YMWWN1N4O",
+            "name": "Cap",
+            "description": "Edoneery Men Women Plain Cotton Adjustable Washed Twill Low Profile Baseball Cap Hat.",
+            "picture": "/static/img/products/cap.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 11,
+                "nanos": 990000000
+            },
+            "categories": ["accessories"]
+        },
+        {
+            "id": "L9ECAV7KIM",
+            "name": "Footwear",
+            "description": "DREAM PAIRS Mens Sandals, Lightweght Outdoor Hiking Sandals Waterproof Athletic Sports Walking Water Sandals With Soft Eva Midsole For Beach Summer Vocation Travel Adventure.",
+            "picture": "/static/img/products/footwear.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 25,
+                "nanos": 990000000
+            },
+            "categories": ["footwear"]
+        },
+        {
+            "id": "2ZYFJ3GM2N",
+            "name": "Hair Dryer Brush",
+            "description": "Hair Dryer Brush Blow Dryer Brush in One Upgraded 4 in 1 Hair Dryer and Styler Volumizer with Negative Ion Anti-frizz Ceramic Titanium Barrel Hot Air Brush Hair Straightener Brush 75MM Oval Shape.",
+            "picture": "/static/img/products/hairdryer2.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 40,
+                "nanos": 990000000
+            },
+            "categories": ["hair", "beauty"]
+        },
+        {
+            "id": "0PUK6V6EV0",
+            "name": "Ceramic Vases",
+            "description": "Steviieden Ceramic Vases Set 2, Modern Home Decor,Off White Round Vases,Modern Dried Flower Vases, Boho Home Decor for Centerpieces Wedding Dinner Table Party Living Room Office Bedroom.",
+            "picture": "/static/img/products/ceramic-cases.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 28,
+                "nanos": 990000000
+            },
+            "categories": ["decor", "home"]
+        },
+        {
+            "id": "LS4PSXUNUM",
+            "name": "Bowl",
+            "description": "Gourmet Home Products 12 Piece Nested Polypropylene Mixing Bowl Food Storage Set with Lids - Outer Dusty Rose.",
+            "picture": "/static/img/products/bowl.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 22,
+                "nanos": 490000000
+            },
+            "categories": ["kitchen"]
+        },
+        {
+            "id": "9SIQT8TOJO",
+            "name": "Food Scale",
+            "description": "OGWAI Food Scale Rechargeable, Multifunction Kitchen Scale Digital with Peeling Weight Grams and Oz, Digital Gram Kitchen Scale for Food - Kitchen Small Appliances.",
+            "picture": "/static/img/products/food-scale.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 7,
+                "nanos": 490000000
+            },
+            "categories": ["kitchen"]
+        },
+        {
+            "id": "6E92ZMYYFZ",
+            "name": "Food Cover",
+            "description": "LekDrok Microwave Food Cover with Mat 10 Inch, Mat as Bowl Holder, Cover for Splatter Guard, Collapsible Lid for Plate Dish, Multi-Purpose Silicone Mat & Kitchen Colander Gadget for Meal Prep,Charcoal.",
+            "picture": "/static/img/products/food-cover.jpg",
+            "priceUsd": {
+                "currencyCode": "USD",
+                "units": 11,
+                "nanos": 990000000
+            },
+            "categories": ["kitchen"]
+        }
+    ]
+}
